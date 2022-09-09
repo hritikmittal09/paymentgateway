@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+{%block my%}
+<div class="container-fluid home_bg ngo_name" >
+<form  action="{{url_for('finish')}}" method="POST" >
+
+
+    <div class="mb-3 ">
+      
+      <input type="email" class="form-control  " id="exampleInputEmail1" name="email" placeholder="Enter E-mail HERE" aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      
+      <input type="number" class="form-control " id="money" name="money" placeholder="Enter money you want to donote">
+    </div>
+    <div class="mb-3 ">
+        <div class="mb-3">
+      
+            <input type="text" class="form-control " id="money" name="payment_method" placeholder="Enter PAYMENT METHOD EX - PAYTM ">
+          </div>
+    </div>
+    
+    <button type="submit"  class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+{%endblock%}
